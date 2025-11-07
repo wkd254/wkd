@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>注册页面</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f5f5f5;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+        
+        .wkd-container {
+            background: white;
+            padding: 30px;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+            width: 350px;
+        }
+        
+        .wkd-title {
+            text-align: center;
+            margin-bottom: 25px;
+            color: #333;
+        }
+        
+        .wkd-input-group {
+            margin-bottom: 15px;
+        }
+        
+        .wkd-input {
+            width: 100%;
+            padding: 12px;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+            box-sizing: border-box;
+            font-size: 14px;
+        }
+        
+        .wkd-buttons {
+            display: flex;
+            gap: 10px;
+            margin-top: 20px;
+        }
+        
+        .wkd-register-btn {
+            flex: 1;
+            padding: 12px;
+            background: #4a90e2;
+            color: white;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+        
+        .wkd-cancel-btn {
+            flex: 1;
+            padding: 12px;
+            background: #999;
+            color: white;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+    </style>
+</head>
+<body>
+    <div class="wkd-container">
+        <h2 class="wkd-title">注册界面</h2>
+        <form>
+            <div class="wkd-input-group">
+                <input type="text" class="wkd-input" placeholder="用户名" required>
+            </div>
+            <div class="wkd-input-group">
+                <input type="password" class="wkd-input" placeholder="密码" required>
+            </div>
+            <div class="wkd-input-group">
+                <input type="password" class="wkd-input" placeholder="确认密码" required>
+            </div>
+            <div class="wkd-input-group">
+                <input type="date" class="wkd-input" required>
+            </div>
+            <div class="wkd-buttons">
+                <button type="submit" class="wkd-register-btn">注册</button>
+                <button type="button" class="wkd-cancel-btn">取消</button>
+            </div>
+        </form>
+    </div>
+</body>
